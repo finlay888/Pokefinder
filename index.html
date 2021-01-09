@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PokeFinder</title>
+	<link rel="stylesheet" type="text/css"href="style.css">
+	<link rel="icon" href="pikachu.png">
+</head>
+<body>
+	<header>
+		<h1 class="title">The PokeFinder</h1>
+		<p class="text">Here you can find information on pokemon and such, you can also search information on specific pokemon in the search bar.</p>
+		<div class="searchBar">
+			<input id="search" type="text" name="search"/>
+			<button class="pointer" onclick="searchPokemon()">Search</button>
+		</div>
+	</header>
+	<div>
+		<div id="destination" class="container">
+		</div>
+		<div class="searchBar">
+			<button class="pointer item-left" onclick="loadPreviousPokemon()">back</button>
+			<button class="pointer item-right" onclick="loadNewPokemon()">next</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
